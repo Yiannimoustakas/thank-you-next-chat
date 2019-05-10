@@ -18,7 +18,7 @@ class IndexPage extends Component {
 
    const nameInputStyles = {
      background: 'transparent',
-     color: 'white',
+     color: '#666',
      border: 0,
      borderBottom: '1px solid #666',
      borderRadius: 0,
@@ -30,7 +30,7 @@ class IndexPage extends Component {
    return (
      <Layout pageTitle="Realtime Chat">
 
-       <main className="container-fluid position-absolute h-100 bg-secondary">
+       <main className="container-fluid position-absolute h-100 bg-light">
 
          <div className="row position-absolute w-100 h-100">
 
@@ -41,9 +41,9 @@ class IndexPage extends Component {
                  {
                    user
                      ? (<span>
-                         <span className="text-dark">Hello!</span> {user}
+                         <span className="text-dark">Hello!</span> <span className="text-secondary">{user}</span>
                        </span>)
-                     : <span className="text-light">What is your name?</span>
+                     : <span className="text-secondary">What is your name?</span>
                  }
                </span>
 
